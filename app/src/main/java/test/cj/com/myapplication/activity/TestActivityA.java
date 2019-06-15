@@ -10,7 +10,7 @@ import android.view.View;
 import test.cj.com.myapplication.R;
 
 /**
- * Created by Administrator on 2019/5/13.
+ * 修改
  */
 
 public class TestActivityA extends AppCompatActivity {
