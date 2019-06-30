@@ -1,1 +1,1 @@
-include ':app', ':wcdb', ':room'
+include ':app'

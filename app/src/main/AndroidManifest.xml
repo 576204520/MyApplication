@@ -16,49 +16,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".fragment.FragmentTestActivtiy">
-
-        </activity>
-        <activity android:name=".activity.TestActivityA">
-
-        </activity>
-        <activity
-            android:name=".activity.TestActivityB"
-            android:launchMode="singleTask"></activity>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTask"></activity>
-
-        <!--<service android:name="org.eclipse.paho.android.service.MqttService" />-->
-        <!--<service android:name=".MQTTService" />-->
-
         <activity
-            android:name=".LoadingActivity"
+            android:name=".SplashActivity"
             android:theme="@style/Fullscreen">
-
-        </activity>
-        <activity android:name=".mcdb.EncryptedDBActivity">
-
-        </activity>
-        <activity android:name=".service.ServiceActivity">
-
-        </activity>
-
-        <service android:name=".service.MyService"></service>
-
-        <activity android:name=".hanlder.HanlderActivity"></activity>
-        <activity android:name=".AsyncTask.AsyncTaskActivity">
-
-
-        </activity>
-
-        <activity android:name=".webView.WebViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 

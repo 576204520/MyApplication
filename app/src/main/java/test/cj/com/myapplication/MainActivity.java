@@ -22,26 +22,6 @@ public class MainActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        EventBus.getDefault().register(this);
-        startService(new Intent(this, MQTTService.class));
-        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                MQTTService.publish("这里是1，给2发消息");
-            }
-        });
     }
 
-    @Subscribe(threadMode = ThreadMode.MAIN)
-    public void getMqttMessage(MQTTMessage mqttMessage) {
-        Log.i(MQTTService.TAG, "get message:" + mqttMessage.getMessage());
-        Toast.makeText(this, mqttMessage.getMessage(), Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    protected void onDestroy() {
-        EventBus.getDefault().unregister(this);
-        super.onDestroy();
-    }
 }

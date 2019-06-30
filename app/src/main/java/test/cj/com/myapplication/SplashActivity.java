@@ -16,7 +16,7 @@ import java.io.File;
  * Created by Administrator on 2019/3/5.
  */
 
-public class LoadingActivity extends AppCompatActivity {
+public class SplashActivity extends AppCompatActivity {
     private VideoView videoView;
     private TextView textView;
     private CustomCountDownTimer timer;
@@ -44,8 +44,8 @@ public class LoadingActivity extends AppCompatActivity {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoadingActivity.this, MainActivity.class));
-                LoadingActivity.this.finish();
+                startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                SplashActivity.this.finish();
             }
         });
         timer = new CustomCountDownTimer(5, new CustomCountDownTimer.ICountDownHandler() {
@@ -61,7 +61,6 @@ public class LoadingActivity extends AppCompatActivity {
             }
         });
         timer.start();
-
     }
 
     @Override

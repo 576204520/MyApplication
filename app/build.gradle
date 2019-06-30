@@ -28,9 +28,4 @@ dependencies {
     compile 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.1.0'
     compile 'org.eclipse.paho:org.eclipse.paho.android.service:1.1.0'
     compile 'org.greenrobot:eventbus:3.0.0'
-
-    // 修改"1.0.0"为实际引用的版本
-    compile 'com.tencent.wcdb:wcdb-android:1.0.0'
-    implementation 'com.tencent.wcdb:room:1.0.8'  // 代替 room-runtime，同时也不需要再引用 wcdb-android
-    annotationProcessor 'android.arch.persistence.room:compiler:1.1.1' // compiler 需要用 room 的
 }
